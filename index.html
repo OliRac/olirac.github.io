@@ -1,12 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script async type="text/javascript" src="js/index.js"></script>
     <title>Olivier Racette</title>
 </head>
-<body>
-    <h1>Hello World!</h1>
+<body class="has-navbar-fixed-top">
+    <!-- Navigation bar -->
+    <nav class="navbar is-link is-fixed-top has-background-primary is-spaced">
+        <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="navbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbar" class="navbar-menu has-background-primary">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#about">
+                    <span class="icon">
+                        <i class="fas fa-info"></i>
+                    </span>
+                    <span>About</span>
+                </a>
+                <a class="navbar-item" href="#projects">
+                    <span class="icon">
+                        <i class="fas fa-gavel"></i>
+                    </span>
+                    <span>Projects</span>
+                </a>
+                <a class="navbar-item" href="#skills">
+                    <span class="icon">
+                        <i class="fas fa-code"></i>
+                    </span>
+                    <span>Skills</span>
+                </a>
+                <a class="navbar-item" href="#experience">
+                    <span class="icon">
+                        <i class="fas fa-stream"></i>
+                    </span>
+                    <span>Experience</span>
+                </a>
+                <a class="navbar-item" href="#contact">
+                    <span class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero has-background-primary">
+        <div class="hero-body">
+            <div class="container has-text-left">
+                <h1 class="title">Olivier Racette</h1>
+                <h2 class="subtitle">A software developer looking for a new home!</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section has-background-light" id="about">
+        <h1 class="title has-text-dark">About</h1>
+        <h2 class="subtitle">Who am I? What do I do? How did I get here?</h2>
+        <div class="block has-text-grey">
+            Greetings! I am a software developer with 3 years of experience in the consulting and game development industries. 
+            I hold a Bachelor's in Computer Science from Concordia University, having studied electives of various fields: AI, Computer Vision, Computer Graphics and Networks.
+            <br><br>
+            I started as a fullstack developer for CGI, building web applications for clients in small teams. Our tech stack was mainly comprised of Spring Boot, OracleDB and Angular.
+            After about two years, seeing the surge in demand for tech workers in nearly every industry, I decided to make the jump to games, following my passion!
+            <br><br>
+            In January 2023, I was hired at Behaviour Interactive as a Tools developer for DeadByDaylight. There, I built and provided in-house tooling support for about 300 employees. The team was also responsible for the game's very busy build pipeline; content was being delivered on a monthly basis, no time for downtimes!
+            This is unfortunately where I was hit by a first wave of layoffs due to budget issues affecting the project. In October 2023, a very considerate someone let me know that cuts were coming in the following months, that I should be looking for an internal transfer ASAP.
+            <br><br>
+            In November 2023, I was lucky enough to get a transfer to a new team, BuildOps, in CoreTech, or corporate technologies. Here, the team was responsible for setting up and supporting generic sandbox CI/CD environments for nearly all projects at BHVR. 
+            We used Salt to automate our work, saving everything as code, making the onboarding process for new productions a breeze. In June 2024 I was hit by the second wave of layoffs at BHVR. 
+            I appreciate my time at BuildOps for making me realize that I am extremely adaptable, turning on a dime, adjusting quickly to a new position with new technologies and new responsibilities that I had never seen nor practiced before. My teammates were also exceptional (thanks guys!!).
+            <br><br>
+            So here I am, back on the grind!
+        </div>
+    </section>
+
+    <section class="section has-background-primary" id="projects">
+        <h1 class="title">Projects</h1>
+        <h2 class="subtitle">Things I can show!</h2>
+
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title has-text-right">Broeselhud_blue, Unreal Edition</p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    To veer into UI programming, I am porting over my favorite Team Fortress 2 HUD to Unreal Engine.
+                    <br><br>
+                    Footage available soon!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section has-background-dark" id="skills">
+        <h1 class="title">Skills</h1>
+        <h2 class="subtitle">Technical Stuff</h2>
+        <div class="block">
+            <h3 class="title is-4 has-text-right">- Programming -</h3>
+            <div class="grid has-text-centered has-text-dark">
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">C++</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">C#</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Python</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Java</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Go</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Salt</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Typescript</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Javascript</div>
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="title is-4 has-text-right">- Databases -</h3>
+            <div class="grid has-text-centered has-text-dark">
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Oracle</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">PostgreSQL</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">MariaDB</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">MySQL</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">MongoDB</div>
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="title is-4 has-text-right">- Game Engines -</h3>
+            <div class="grid has-text-centered has-text-dark">
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Unreal</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Unity</div>
+                <div class="cell py-3 px-4 has-background-light has-radius-normal">Godot</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section has-background-primary" id="experience">
+        <h1 class="title">Experience</h1>
+        <h2 class="subtitle">Work, work!</h2>
+        
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title has-text-right">BuildOps, Coretech @ Behaviour Interactive</p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <ul>
+                        <li>Provided sandbox CI/CD environments for productions to use.</li>
+                        <li>Maintained a generic Unreal and Unity pipeline for productions (Python, Groovy, Jenkins).</li>
+                        <li>Managed a pool of over 60 nodes, a mix of RHEL9 and Windows, through the power of Salt.</li>
+                        <li>Wrote custom Salt modules to better operate Jenkins agents (Python).</li>
+                        <li>Everything as code. This mentality enabled us to re-run anything and everything wherever needed, saving precious time, as well as keeping track of changes through Git.</li>
+                        <li>Provided metrics for nodes and pipelines via Prometheus and Grafana.</li>
+                        <li>Modified open-source external tooling to better fit our needs (C#).</li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">Nov 2023 - Jun 2024</p>
+            </footer>
+        </div>
+
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title has-text-right">Tools & Build Pipeline, DeadByDaylight @ Behaviour Interactive</p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <ul>
+                    <li>Maintained and brought new features to the very busy build pipeline of the game (Python, YAML, Jenkins).</li>
+                    <li>Provided support for daily build and tool failures.</li>
+                    <li>Revamped a legacy tool used by every developer on the game by modernizing its code base and adding features such as automatic updates, easier deployment via artifactory and extensive Perforce workspace validation. (C#)</li>
+                    <li>Implemented new features in Unreal Build Tool and Unreal Automation Tool, letting developers use an alternate method of code compilation (non-unity) for improved stability as well as backporting LK package support for Microsoft GDK from Unreal 5 to Unreal 4 (C++ / C#).</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">Jan 2023 - Nov 2023</p>
+            </footer>
+        </div>
+
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title has-text-right">Consulting Developer @ CGI</p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <ul>
+                        <li>Worked in collaboration with clients to build web solutions in fast paced environments, applying Agile/Scrum practices.</li>
+                        <li>Developed modern microservices using Spring Boot, RabbitMQ, Docker and various database systems such as OracleSQL, PostreSQL and MongoDB</li>
+                        <li>Designed and established responsive web interfaces with Angular.</li>
+                        <li>Implemented real time data services with websockets.</li>
+                        <li>Automated testing with Karma, Jasmine, JUnit, Mockito.</li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">Jan 2021 - Dec 2022</p>
+            </footer>
+        </div>
+    </section>
+
+    <section class="section has-background-dark" id="contact">
+        <h1 class="title">Contact</h1>
+
+        <div class="block">
+            Please see <a href="https://www.linkedin.com/in/oracette/">my linked<i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer has-background-grey-lighter">
+        <div class="columns">
+            <div class="column has-text-centered">
+                <p>Styled with <a class="is-link" href="https://bulma.io">Bulma</a></p>
+            </div>
+            <div class="column has-text-centered">
+                <p>Powered by <a class="is-link" href="https://pages.github.com/">Github Pages</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
